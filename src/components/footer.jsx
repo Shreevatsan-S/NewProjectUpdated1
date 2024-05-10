@@ -125,9 +125,15 @@ function Footer() {
                 <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
 
                 <address className="footer-link">
-                  # 40-27-12, First Floor,Beside Vijayawada Service Station Pinnamaneni Care Hospital Road, Gayathri Nagar,VIJAYAWADA.Krishna Dist.,A.P
+                Raja Educational Academy Door no.58-5-19
+Danayya Street,
+Patamata,
+Vijayawada -
+Pin code 520010
+NTR Dist.
                 </address>
               </li>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3825.562464703774!2d80.65775307514507!3d16.497677984245627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTbCsDI5JzUxLjYiTiA4MMKwMzknMzcuMiJF!5e0!3m2!1sen!2sin!4v1715011834676!5m2!1sen!2sin" width="230" height="100" style={{ border: "0" }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
 
               <li className="footer-item">
                 <ion-icon name="call" aria-hidden="true"></ion-icon>
