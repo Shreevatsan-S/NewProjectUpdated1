@@ -17,6 +17,15 @@ const toggleElem = (elem) => {
   }
 };
 
+const handleMessage = (event) => {
+    if (event.data === 'loginClicked') {
+        // Navigate to login page
+        // history.push('/login');
+        window.open("https://rajaeduacademy.vercel.app/login", "_self");
+    }
+};
+
+
 /**
  * Popup functionality
  */
@@ -299,7 +308,7 @@ function LandingPage() {
       
                   <p className="section-subtitle">Free Demo</p>
       
-                  <h2 className="h2 section-title">Join Our Free Demo className</h2>
+                  <h2 className="h2 section-title">Join Our Free Demo</h2>
       
                   <p className="section-text">
                     
