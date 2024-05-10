@@ -19,11 +19,13 @@ const toggleElem = (elem) => {
 
 const handleMessage = (event) => {
     event.preventDefault();
-   console.log(event.data);
+    event.stopPropagation();
+    console.log(event);
     if (event.data === 'loginClicked') {
         window.open("https://rajaeduacademy.vercel.app/login", "_self");
     }
 };
+
 
 
 /**
