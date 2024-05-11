@@ -69,9 +69,6 @@ function Header() {
     <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
     <span className="span">Login</span>
   </a>
-
-          </a>
-
           <button className="header-action-btn nav-open-btn" aria-label="Open menu" data-nav-toggler>
             <ion-icon name="menu-outline"></ion-icon>
           </button>
