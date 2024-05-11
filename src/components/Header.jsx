@@ -65,7 +65,7 @@ function Header() {
         </nav>
 
         <div className="header-actions">
-  <a href="/" className="header-action-btn login-btn" onClick={() => window.open("https://rajaeduacademy.vercel.app/login", "_self")}>
+  <a href="https://rajaeduacademy.vercel.app/login" className="header-action-btn login-btn" onClick={() => window.open("https://rajaeduacademy.vercel.app/login", "_self")}>
     <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
     <span className="span">Login</span>
   </a>
