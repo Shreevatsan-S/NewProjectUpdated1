@@ -18,16 +18,6 @@ function Header() {
     };
   }, []); // Empty dependency array ensures this effect runs only once
 
-  const handleMessage = (event) => {
-    event.preventDefault();
-    event.stopPropagation();
-    console.log(event);
-    if (event.data === 'loginClicked') {
-        window.open("https://rajaeduacademy.vercel.app/login", "_self");
-    }
-};
-
-
   return (
     <header style={{ height: `${headerHeight}px` }} className="header" data-header>
       <div className="container">
@@ -47,28 +37,29 @@ function Header() {
 
           <ul className="navbar-list">
             <li className="navbar-item">
-              <a href="#home" className="navbar-link" data-nav-toggler>Home</a>
+              <a href="https://rajaeducationalacademy.in/#home" className="navbar-link" data-nav-toggler>Home</a>
             </li>
             <li className="navbar-item">
-              <a href="#About" className="navbar-link" data-nav-toggler>About</a>
+              <a href="https://rajaeducationalacademy.in/#About" className="navbar-link" data-nav-toggler>About</a>
             </li>
             <li className="navbar-item">
-              <a href="#courses" className="navbar-link" data-nav-toggler>Courses</a>
+              <a href="https://rajaeducationalacademy.in/#courses" className="navbar-link" data-nav-toggler>Courses</a>
             </li>
             <li className="navbar-item">
-              <a href="#event" className="navbar-link" data-nav-toggler>Gallery</a>
+              <a href="https://rajaeducationalacademy.in/#event" className="navbar-link" data-nav-toggler>Gallery</a>
             </li>
             <li className="navbar-item">
-              <a href="#newsletter" className="navbar-link" data-nav-toggler>Contact</a>
+              <a href="https://rajaeducationalacademy.in/#newsletter" className="navbar-link" data-nav-toggler>Contact</a>
             </li>
           </ul>
         </nav>
 
         <div className="header-actions">
-  <a href="https://rajaeduacademy.vercel.app/login" className="header-action-btn login-btn" onClick={() => window.open("https://rajaeduacademy.vercel.app/login", "_self")}>
-    <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
-    <span className="span">Login</span>
-  </a>
+          <a href="https://rajaeduacademy.vercel.app/login" className="header-action-btn login-btn" onClick={() => window.open("https://rajaeduacademy.vercel.app/login", "_self")}>
+            <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+            <span className="span">Login</span>
+          </a>
+
           <button className="header-action-btn nav-open-btn" aria-label="Open menu" data-nav-toggler>
             <ion-icon name="menu-outline"></ion-icon>
           </button>
