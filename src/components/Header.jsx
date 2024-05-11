@@ -18,6 +18,16 @@ function Header() {
     };
   }, []); // Empty dependency array ensures this effect runs only once
 
+  const handleMessage = (event) => {
+    event.preventDefault();
+    event.stopPropagation();
+    console.log(event);
+    if (event.data === 'loginClicked') {
+        window.open("https://rajaeduacademy.vercel.app/login", "_self");
+    }
+};
+
+
   return (
     <header style={{ height: `${headerHeight}px` }} className="header" data-header>
       <div className="container">
@@ -55,9 +65,11 @@ function Header() {
         </nav>
 
         <div className="header-actions">
-          <a href="/" className="header-action-btn login-btn">
-            <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
-            <span className="span">Login</span>
+  <a href="/" className="header-action-btn login-btn" onClick={() => window.open("https://rajaeduacademy.vercel.app/login", "_self")}>
+    <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+    <span className="span">Login</span>
+  </a>
+
           </a>
 
           <button className="header-action-btn nav-open-btn" aria-label="Open menu" data-nav-toggler>
