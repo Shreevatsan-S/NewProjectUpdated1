@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
+import { HashLink as Link } from 'react-router-hash-link';
 function Header() {
   const [headerHeight, setHeaderHeight] = useState(120); // Initial header height, adjust as needed
 
@@ -34,24 +34,25 @@ function Header() {
               <ion-icon name="close-outline"></ion-icon>
             </button>
           </div>
-
-          <ul className="navbar-list">
-            <li className="navbar-item">
-              <a href="https://rajaeducationalacademy.in/#home" className="navbar-link" data-nav-toggler>Home</a>
-            </li>
-            <li className="navbar-item">
-              <a href="https://rajaeducationalacademy.in/#About" className="navbar-link" data-nav-toggler>About</a>
-            </li>
-            <li className="navbar-item">
-              <a href="https://rajaeducationalacademy.in/#courses" className="navbar-link" data-nav-toggler>Courses</a>
-            </li>
-            <li className="navbar-item">
-              <a href="https://rajaeducationalacademy.in/#event" className="navbar-link" data-nav-toggler>Gallery</a>
-            </li>
-            <li className="navbar-item">
-              <a href="https://rajaeducationalacademy.in/#newsletter" className="navbar-link" data-nav-toggler>Contact</a>
-            </li>
-          </ul>
+<Router>
+  <ul className="navbar-list">
+    <li className="navbar-item">
+      <Link smooth to="/#home" className="navbar-link" data-nav-toggler>Home</Link>
+    </li>
+    <li className="navbar-item">
+      <Link smooth to="/#About" className="navbar-link" data-nav-toggler>About</Link>
+    </li>
+    <li className="navbar-item">
+      <Link smooth to="/#courses" className="navbar-link" data-nav-toggler>Courses</Link>
+    </li>
+    <li className="navbar-item">
+      <Link smooth to="/#event" className="navbar-link" data-nav-toggler>Gallery</Link>
+    </li>
+    <li className="navbar-item">
+      <Link smooth to="/#newsletter" className="navbar-link" data-nav-toggler>Contact</Link>
+    </li>
+  </ul>
+</Router>
         </nav>
 
         <div className="header-actions">
